@@ -32,6 +32,8 @@ namespace RPSLS
                 battlefield = new Throw(twoplay);
             }
             battlefield.Battle();
+
+            Console.ReadLine();
            
             
         }

@@ -64,43 +64,43 @@ namespace RPSLS
             int output = 0;
             if (throw1 != throw2)
             {
-                if ( throw2=="Scissors" || throw2 == "Lizard" && throw1 == "Rock" )
+                if ( throw1 == "Rock" && throw2 =="Scissors" || throw2 == "Lizard" && throw1 == "Rock" )
                 {
                     output = 1;
                 }
-                else if (throw2 == "Paper" || throw2 =="Spock"  &&throw1 == "Rock" )
+                else if ( throw1 == "Rock"&&throw2 == "Paper" || throw2 =="Spock"   )
                 {
                     output = 2;
                 }
-                if (throw2 == "rock" || throw2 == "Spock" && throw1 == "Paper")
+                if (throw1 == "Paper"&&throw2 == "rock" || throw2 == "Spock" )
                 {
                     output = 1;
                 }
-                else if ( throw2 == "Scissors"||throw2=="Lizard" && throw1 == "Paper")
+                else if ( throw1 == "Paper"&&throw2 == "Scissors"||throw2=="Lizard" )
                 {
                     output = 2;
                 }
-                if (throw2 == "Paper" || throw2 == "Lizard" && throw1 == "Scissors")
+                if ( throw1 == "Scissors"&&throw2 == "Paper" || throw2 == "Lizard" )
                 {
                     output = 1;
                 }
-                else if (throw2 == "Rock" || throw2 == "Spock" && throw1 == "Scissors")
+                else if (throw1 == "Scissors"&&throw2 == "Rock" || throw2 == "Spock" )
                 {
                     output = 2;
                 }
-                if (throw2 == "Paper" || throw2 == "Spock" && throw1 == "Lizard")
+                if ( throw1 == "Lizard"&&throw2 == "Paper" || throw2 == "Spock" )
                 {
                     output = 1;
                 }
-                else if (throw2 == "Rock" || throw2 == "Scissors" && throw1 == "Lizard")
+                else if ( throw1 == "Lizard"&&throw2 == "Rock" || throw2 == "Scissors" )
                 {
                     output = 2;
                 }
-                if (throw2 == "Scissors" || throw2 == "Rock" && throw1 == "Spock")
+                if ( throw1 == "Spock"&&throw2 == "Scissors" || throw2 == "Rock" )
                 {
                     output = 1;
                 }
-                else if (throw2 == "lizard" || throw2 == "Paper" && throw1 == "Spock")
+                else if (throw1 == "Spock"&&throw2 == "lizard" || throw2 == "Paper" )
                 {
                     output = 2;
                 }
