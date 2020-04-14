@@ -72,7 +72,7 @@ namespace RPSLS
             int output = 0;
             if (throw1 != throw2)
             {
-                if ( throw1 == "Rock" &&( throw2 =="Scissors" || throw2 == "Lizard" && throw1 == "Rock") )
+                if ( throw1 == "Rock" &&( throw2 =="Scissors" || throw2 == "Lizard" ) )
                 {
                     output = 1;
                 }
