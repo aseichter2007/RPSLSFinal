@@ -81,7 +81,7 @@ namespace RPSLS
                 {
                     output = 2;
                 }
-                if (throw1 == "Paper" && (throw2 == "rock" || throw2 == "Spock" ))
+                else if (throw1 == "Paper" && (throw2 == "rock" || throw2 == "Spock" ))
                 {
                     output = 1;
                 }
@@ -89,7 +89,7 @@ namespace RPSLS
                 {
                     output = 2;
                 }
-                if ( throw1 == "Scissors" && (throw2 == "Paper" || throw2 == "Lizard" ))
+                else if ( throw1 == "Scissors" && (throw2 == "Paper" || throw2 == "Lizard" ))
                 {
                     output = 1;
                 }
@@ -97,7 +97,7 @@ namespace RPSLS
                 {
                     output = 2;
                 }
-                if ( throw1 == "Lizard" && (throw2 == "Paper" || throw2 == "Spock" ))
+                else if ( throw1 == "Lizard" && (throw2 == "Paper" || throw2 == "Spock" ))
                 {
                     output = 1;
                 }
@@ -105,7 +105,7 @@ namespace RPSLS
                 {
                     output = 2;
                 }
-                if ( throw1 == "Spock" && (throw2 == "Scissors" || throw2 == "Rock") )
+                else if ( throw1 == "Spock" && (throw2 == "Scissors" || throw2 == "Rock") )
                 {
                     output = 1;
                 }
