@@ -6,20 +6,20 @@ namespace RPSLS
 {
     class AI : Player
     {
+
         public AI()
         {
             random = new Random();
-            name = GetName();
+            SetName();
             //throws = new List<string>() { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
 
         }
-        public override string GetName()
+        public override void SetName()
         {
-            List<string> name = new List<string>() { "Mike Rowe Bot", "Dwayne 'The Rock' Johnson", "Mr T", "Data", "Michael Terrill", "Brett Johnson", "Charles King", "David Lagrange", "Michael Heinisch", "Nevin Seibel" };
+            List<string> names = new List<string>() { "Mike Rowe Bot", "Dwayne 'The Rock' Johnson", "Mr T", "Data", "Michael Terrill", "Brett Johnson", "Charles King", "David Lagrange", "Michael Heinisch", "Nevin Seibel" };
 
-             int rand = random.Next(0, name.Count - 1);
-            string output = name[rand];
-            return output;        
+             int rand = random.Next(0, names.Count - 1);
+            name = names[rand];      
         }
         public override string Throw()
         {
