@@ -31,11 +31,13 @@ namespace RPSLS
             {
                 battlefield = new Throw(twoplay);
             }
+            string exit = "";
+            while (exit != "exit")
+            {
             battlefield.Battle();
-
-            Console.ReadLine();
-           
-            
+            Console.WriteLine("Rematch?   Type exit to exit");
+                exit = Console.ReadLine();
+            }           
         }
     }
 }

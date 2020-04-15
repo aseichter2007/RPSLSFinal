@@ -42,14 +42,14 @@ namespace RPSLS
                     p1score++;
                     string winway = WinWay(throw1,throw2);
                     
-                    Console.WriteLine(p1.name + " wins the round with "+ throw1 + " " +winway+" "+ throw2);
+                    Console.WriteLine(p1.name + " wins the round. "+ throw1 + " " +winway+" "+ throw2);
                     
                 }
                 else if (win == 2)
                 {
                     string winway = WinWay(throw2, throw1);
                     p2score++;
-                    Console.WriteLine(p2.name + " wins the round with "+ throw2 + " " + winway + " " + throw1);
+                    Console.WriteLine(p2.name + " wins the round. "+ throw2 + " " + winway + " " + throw1);
 
                 }
                 count++;
@@ -69,6 +69,7 @@ namespace RPSLS
         }
         public int ThrowCheck(string throw1,string throw2)
         {
+            //a switch case might be cleaner here, but its already made and works,too late
             int output = 0;
             if (throw1 != throw2)
             {
@@ -100,7 +101,7 @@ namespace RPSLS
                 {
                     output = 1;
                 }
-                else if ( throw1 == "Lizard" && (throw2 == "Paper" || throw2 == "Scissors") )
+                else if ( throw1 == "Lizard" && (throw2 == "Rock" || throw2 == "Scissors") )
                 {
                     output = 2;
                 }
