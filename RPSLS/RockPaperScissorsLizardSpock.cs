@@ -34,7 +34,7 @@ namespace RPSLS
                 Space();
                 string throw2 = p2.Throw();
                 int win = ThrowCheck(throw1, throw2);
-                Win(win, throw1, throw1);
+                Win(win, throw1, throw2);
                 count++;
                 Space();
             }
