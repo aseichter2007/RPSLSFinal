@@ -45,7 +45,7 @@ namespace RPSLS
             }
             else
             {
-                Console.WriteLine("You dummy, that isnt a singe integer between one and 5");
+                Console.WriteLine("You dummy, that isnt a single integer between one and 5");
             }
             return throwCheck;
         }
